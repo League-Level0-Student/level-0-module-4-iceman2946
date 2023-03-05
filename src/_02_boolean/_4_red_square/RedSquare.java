@@ -25,10 +25,13 @@ public class RedSquare {
 			drawRedSquare();
 		}
 		else if(isRed==false&&isSquare) {
-			drewBlueSquare=true;
+			drawBlueSquare();
 		}
 		else if(isRed&&isSquare==false) {
-			drewRedTriangle=true;
+			drawRedTriangle();
+		}
+		else if(isRed==false&&isSquare==false) {
+			drawBlueTriangle();
 		}
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
@@ -61,6 +64,7 @@ public class RedSquare {
 		// 7. Write an if statement using the static booleans at the top of 
 		//    the program. If drewRedSquare OR drewBlueSquare are true, then
 		//    tell the user they drew a square in a pop-up. Hint: ||
+		
 		
 		//    Notice these static booleans start off false, but update to true 
 		//    whenever you call their matching method.
