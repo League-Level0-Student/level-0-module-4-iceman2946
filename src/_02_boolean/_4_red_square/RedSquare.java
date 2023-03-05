@@ -24,9 +24,16 @@ public class RedSquare {
 		if(isRed && isSquare) {
 			drawRedSquare();
 		}
+		else if(isRed==false&&isSquare) {
+			drewBlueSquare=true;
+		}
+		else if(isRed&&isSquare==false) {
+			drewRedTriangle=true;
+		}
 		else {
             JOptionPane.showMessageDialog(null, "No shape was drawn!");
         }
+		
 		
 		// 1. Run the program and notice no shape is drawn.
 		

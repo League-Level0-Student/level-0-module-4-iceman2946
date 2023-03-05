@@ -27,7 +27,7 @@ public class ChangeCalculator {
 		double dime= 0.1 * dimeAsInt;
 		double quarter= 0.25 * quarterAsInt;
 		// Tell the user how much money they have in dollars and cents format (e.g. $6.75)
-		
+		JOptionPane.showMessageDialog(null, "You have "+ (nickel+dime+quarter));
 	}
 }
 
