@@ -12,10 +12,10 @@ import processing.core.PImage;
  * 
  * 2. Declare a variable for the image:
  *    PImage face;
- * 
+ *   
  * 3. In your setup() method, import your image using the following code:
- *    face = loadImage("face.jpg");
- * 
+ /*    face = loadImage("face.jpg");
+ *  
  * 4. Resize your face image to the size of the window using the resize() method.
  * 
  * 5. In the draw() method, place a white ellipse over the left eye of your image.
@@ -49,11 +49,35 @@ public class GooglyEyes extends PApplet {
     
     @Override
     public void setup() {
-
+    face=loadImage("cat.jpg");
+    face.resize(800, 600);
+    
     }
 
-    @Override
+    @Override 
     public void draw() {
+    background(face);
+    System.out.println(mouseX);
+    System.out.println(mouseY);
+    fill(255,255,255);
+    ellipse(240,266,250,200);
+    ellipse(568,266,250,200);
+    fill(0,0,0); 
+    int x= mouseX;
+    int y= mouseY;
+    if(x>340) {
+    	x=340;
+    }
+    if(x<140) {
+    	x=140;
+    }
+    if(y<391) {
+    	y=391;
+    }
+    if(y<141) {
+    	y=141;
+    }
+    ellipse(x,y,50,50);
 
     }
 
