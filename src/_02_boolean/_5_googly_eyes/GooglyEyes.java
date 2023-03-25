@@ -68,16 +68,17 @@ public class GooglyEyes extends PApplet {
     if(x>340) {
     	x=340;
     }
-    if(x<140) {
-    	x=140;
+    if(x<150) {
+    	x=150;
     }
-    if(y<391) {
-    	y=391;
+    if(y>350) {
+    	y=350;
     }
-    if(y<141) {
-    	y=141;
+    if(y<200) {
+    	y=200;
     }
     ellipse(x,y,50,50);
+    ellipse(x+348,y,50,50);
 
     }
 
