@@ -19,6 +19,9 @@ public class StringMethods {
 		//    HINT: use .length() to determine how many loops
 		for(int i=0; i<4; i++) {
 			System.out.println(character.charAt(i));
+			if(i==1) {
+				System.out.println("e at index 1");
+			}
 		}
 		
 		// 5. Pick a char inside your String, and use a loop to determine
